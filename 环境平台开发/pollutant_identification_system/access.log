@@ -1,0 +1,993 @@
+2025-04-12 16:33:40,614 - WARNING - Not Found: /favicon.ico
+2025-04-12 16:39:11,692 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 16:41:10,737 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-12 16:41:46,036 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 16:42:04,897 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-12 16:42:13,840 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 16:42:52,027 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 16:42:56,224 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 16:43:56,902 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 16:43:59,478 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 16:44:04,260 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 16:44:08,456 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-12 16:44:08,456 - INFO - NumExpr defaulting to 8 threads.
+2025-04-12 16:44:33,028 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 16:45:18,656 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 16:45:24,605 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 16:45:24,815 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-12 16:45:24,815 - INFO - NumExpr defaulting to 8 threads.
+2025-04-12 16:47:48,973 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 16:48:24,305 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 16:48:26,933 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 16:48:37,604 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 16:48:40,707 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 16:48:40,923 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-12 16:48:40,923 - INFO - NumExpr defaulting to 8 threads.
+2025-04-12 16:48:50,594 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 16:50:16,535 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 16:50:16,743 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-12 16:50:16,743 - INFO - NumExpr defaulting to 8 threads.
+2025-04-12 16:50:19,438 - INFO - �û� gar ���ؽ���ļ�
+2025-04-12 16:53:05,651 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\calculate.py changed, reloading.
+2025-04-12 16:53:12,190 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 16:53:12,406 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-12 16:53:12,406 - INFO - NumExpr defaulting to 8 threads.
+2025-04-12 16:53:13,879 - INFO - �û� gar ���ؽ���ļ�
+2025-04-12 16:57:25,922 - INFO - �û� gar ���ؽ���ļ�
+2025-04-12 16:58:00,064 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 16:58:01,616 - INFO - �û� gar ���ؽ���ļ�
+2025-04-12 16:59:03,911 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 16:59:06,564 - INFO - �û� gar ���ؽ���ļ�
+2025-04-12 16:59:57,567 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:00:01,376 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:00:02,437 - INFO - �û� gar ���ؽ���ļ�
+2025-04-12 17:01:03,739 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:01:20,713 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:01:22,661 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:01:23,615 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:01:23,772 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:01:23,899 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:01:33,441 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:01:34,147 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:01:34,328 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:02:08,723 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:02:21,524 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:03:43,172 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:03:44,066 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:03:44,216 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:03:44,348 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:03:44,490 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:03:44,624 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:03:44,767 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:03:44,910 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:04:33,863 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:04:34,773 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:04:34,914 - WARNING - Forbidden (CSRF token missing.): /process_files/
+2025-04-12 17:04:44,249 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:04:58,323 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:05:00,188 - INFO - �û� gar ���ؽ���ļ�
+2025-04-12 17:05:57,094 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:06:16,031 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:06:51,823 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:06:52,623 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:07:03,811 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:07:11,413 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:07:36,733 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:07:46,087 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:08:14,982 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\calculate.py changed, reloading.
+2025-04-12 17:08:20,040 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:08:20,256 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-12 17:08:20,256 - INFO - NumExpr defaulting to 8 threads.
+2025-04-12 17:08:30,217 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\calculate.py changed, reloading.
+2025-04-12 17:08:31,316 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:08:31,525 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-12 17:08:31,526 - INFO - NumExpr defaulting to 8 threads.
+2025-04-12 17:08:49,161 - INFO - �û� gar (ID: 2) �����ļ�����
+2025-04-12 17:14:01,398 - INFO - D:\����ƽ̨����\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-12 17:17:51,916 - INFO - 用户 gar (ID: 2) 请求文件处理
+2025-04-12 17:17:52,302 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-12 17:17:52,302 - INFO - NumExpr defaulting to 8 threads.
+2025-04-12 17:17:59,154 - INFO - 用户 gar 下载结果文件
+2025-04-12 21:51:31,351 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-12 21:51:40,209 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-12 21:51:45,847 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-12 21:51:48,428 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-12 21:52:06,164 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 21:52:15,818 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 21:52:37,254 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 21:52:41,900 - ERROR - Internal Server Error: /first_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 54, in first_page
+    return render(request, 'main_app/first_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'effect_analysis' not found. 'effect_analysis' is not a valid view function or pattern name.
+2025-04-12 21:53:48,329 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-12 21:54:30,859 - ERROR - Internal Server Error: /first_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 54, in first_page
+    return render(request, 'main_app/first_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'risk_ranking' not found. 'risk_ranking' is not a valid view function or pattern name.
+2025-04-12 21:54:46,666 - ERROR - Internal Server Error: /first_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 54, in first_page
+    return render(request, 'main_app/first_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'risk_ranking' not found. 'risk_ranking' is not a valid view function or pattern name.
+2025-04-12 21:55:10,775 - ERROR - Internal Server Error: /first_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 54, in first_page
+    return render(request, 'main_app/first_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'risk_ranking' not found. 'risk_ranking' is not a valid view function or pattern name.
+2025-04-12 21:57:13,140 - ERROR - Internal Server Error: /first_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 54, in first_page
+    return render(request, 'main_app/first_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'risk_ranking' not found. 'risk_ranking' is not a valid view function or pattern name.
+2025-04-12 21:57:50,299 - ERROR - Internal Server Error: /second_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 252, in second_page
+    return render(request, 'main_app/effect_analysis.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main_app/effect_analysis.html
+2025-04-12 21:57:52,972 - ERROR - Internal Server Error: /second_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 252, in second_page
+    return render(request, 'main_app/effect_analysis.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: main_app/effect_analysis.html
+2025-04-12 21:58:48,119 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-12 21:58:52,015 - ERROR - Internal Server Error: /second_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 252, in second_page
+    return render(request, 'main_app/second_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'exposure_analysis' not found. 'exposure_analysis' is not a valid view function or pattern name.
+2025-04-12 21:59:07,333 - ERROR - Internal Server Error: /second_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 252, in second_page
+    return render(request, 'main_app/second_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'exposure_analysis' not found. 'exposure_analysis' is not a valid view function or pattern name.
+2025-04-12 22:01:26,106 - ERROR - Internal Server Error: /second_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 252, in second_page
+    return render(request, 'main_app/second_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'exposure_analysis' not found. 'exposure_analysis' is not a valid view function or pattern name.
+2025-04-12 22:01:27,673 - ERROR - Internal Server Error: /second_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 252, in second_page
+    return render(request, 'main_app/second_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'exposure_analysis' not found. 'exposure_analysis' is not a valid view function or pattern name.
+2025-04-12 22:01:31,641 - ERROR - Internal Server Error: /second_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 252, in second_page
+    return render(request, 'main_app/second_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'exposure_analysis' not found. 'exposure_analysis' is not a valid view function or pattern name.
+2025-04-12 22:01:54,996 - ERROR - Internal Server Error: /second_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 252, in second_page
+    return render(request, 'main_app/second_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'risk_ranking' not found. 'risk_ranking' is not a valid view function or pattern name.
+2025-04-12 22:04:29,375 - ERROR - Internal Server Error: /second_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 252, in second_page
+    return render(request, 'main_app/second_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'effect_analysis' not found. 'effect_analysis' is not a valid view function or pattern name.
+2025-04-12 22:04:34,950 - ERROR - Internal Server Error: /second_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 252, in second_page
+    return render(request, 'main_app/second_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'effect_analysis' not found. 'effect_analysis' is not a valid view function or pattern name.
+2025-04-12 22:17:08,870 - ERROR - Internal Server Error: /second_page/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 252, in second_page
+    return render(request, 'main_app/second_page.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'effect_analysis' not found. 'effect_analysis' is not a valid view function or pattern name.
+2025-04-13 19:42:31,885 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 19:42:56,927 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 19:54:19,877 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-13 19:56:44,998 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 19:57:14,213 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 19:57:15,957 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 19:57:31,758 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 20:05:48,727 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:12:25,652 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 20:13:51,871 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:13:54,453 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:14:10,187 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:14:15,824 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:15:05,046 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:15:07,676 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:15:57,926 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:16:06,614 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:16:13,275 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:16:23,963 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:16:42,788 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:16:46,447 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:31:21,978 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:31:33,746 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:31:35,359 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:31:38,007 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:32:25,293 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:34:39,045 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:34:40,611 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:38:55,773 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:38:59,395 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:39:01,988 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:39:05,595 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:39:09,193 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:39:11,811 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:44:09,562 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 20:52:26,133 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 20:53:19,553 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-13 20:53:25,231 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-13 20:53:27,056 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-13 20:53:29,710 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-13 21:13:00,415 - ERROR - Internal Server Error: /risk_tracing/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 410, in risk_tracing
+    return render(request, 'main_app/risk_tracing.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 1016, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\base.py", line 977, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\base.py", line 98, in reverse
+    resolved_url = resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'download_tracing_template' not found. 'download_tracing_template' is not a valid view function or pattern name.
+2025-04-13 21:13:53,824 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-13 21:13:57,439 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-13 21:14:00,993 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\urls.py changed, reloading.
+2025-04-13 21:14:09,599 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 21:15:22,464 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 21:15:48,408 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 21:16:01,105 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:20:52,035 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:21:17,129 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:21:46,292 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:24:05,046 - ERROR - Internal Server Error: /download_tracing_template/
+Traceback (most recent call last):
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\anaconda\Lib\site-packages\django\contrib\auth\decorators.py", line 59, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\环境平台开发\pollutant_identification_system\main_app\views.py", line 430, in download_tracing_template
+    response = FileResponse(open(file_path, 'rb'))
+                            ^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\环境平台开发\\pollutant_identification_system\\media\\templates\\企业生产使用化学品清单模板.xlsx'
+2025-04-13 21:25:07,988 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:26:29,948 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:31:57,286 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:32:36,401 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:32:46,192 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:36:00,472 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:36:05,135 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:36:18,809 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:36:20,460 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 21:39:13,348 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 21:39:13,351 - ERROR - 处理效应分析请求时出错: name 'reverse' is not defined
+2025-04-13 21:40:38,978 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 21:40:50,667 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 21:40:55,212 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 21:40:59,404 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 21:41:20,728 - INFO - 用户 whn (ID: 1) 请求文件处理
+2025-04-13 21:41:24,068 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-13 21:41:24,068 - INFO - NumExpr defaulting to 8 threads.
+2025-04-13 21:41:35,575 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 21:42:54,558 - INFO - 用户 whn (ID: 1) 请求风险溯源分析
+2025-04-13 21:43:09,591 - INFO - 用户 whn 下载风险溯源结果文件
+2025-04-13 21:43:25,116 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 21:45:10,504 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\views.py changed, reloading.
+2025-04-13 22:20:52,477 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 22:21:12,886 - INFO - 用户 whn (ID: 1) 请求文件处理
+2025-04-13 22:21:13,235 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-13 22:21:13,235 - INFO - NumExpr defaulting to 8 threads.
+2025-04-13 22:21:23,627 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 22:30:06,407 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\calculate_effects.py changed, reloading.
+2025-04-13 22:30:16,051 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 22:31:04,969 - INFO - 用户 whn (ID: 1) 请求文件处理
+2025-04-13 22:31:05,336 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-13 22:31:05,336 - INFO - NumExpr defaulting to 8 threads.
+2025-04-13 22:31:30,395 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 22:32:18,109 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 22:32:25,893 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\thread_pool.py changed, reloading.
+2025-04-13 22:35:10,659 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 22:35:47,409 - INFO - 用户 whn (ID: 1) 请求文件处理
+2025-04-13 22:35:47,763 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-13 22:35:47,763 - INFO - NumExpr defaulting to 8 threads.
+2025-04-13 22:35:58,127 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 22:38:09,052 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\calculate_effects.py changed, reloading.
+2025-04-13 22:38:42,815 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 22:39:31,339 - INFO - 用户 whn (ID: 1) 请求文件处理
+2025-04-13 22:39:31,731 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-13 22:39:31,731 - INFO - NumExpr defaulting to 8 threads.
+2025-04-13 22:39:49,249 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 23:01:32,098 - INFO - 用户 whn (ID: 1) 请求文件处理
+2025-04-13 23:02:02,585 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 23:02:13,306 - INFO - 用户 whn 下载风险排序结果文件
+2025-04-13 23:02:31,097 - INFO - 用户 whn (ID: 1) 请求风险溯源分析
+2025-04-13 23:02:39,645 - INFO - 用户 whn 下载风险溯源结果文件
+2025-04-13 23:02:47,741 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 23:04:34,780 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-13 23:06:06,336 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-14 23:02:56,528 - WARNING - Not Found: /favicon.ico
+2025-04-14 23:03:01,850 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-14 23:03:18,130 - INFO - 用户 whn (ID: 1) 请求文件处理
+2025-04-14 23:03:24,271 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-04-14 23:03:24,271 - INFO - NumExpr defaulting to 8 threads.
+2025-04-14 23:04:08,246 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-14 23:06:25,974 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-14 23:06:58,995 - INFO - 用户 whn (ID: 1) 请求效应分析
+2025-04-14 23:10:32,865 - INFO - 用户 gar (ID: 2) 请求文件处理
+2025-04-14 23:10:39,682 - INFO - 用户 gar 下载结果文件
+2025-04-14 23:10:45,368 - INFO - 用户 gar (ID: 2) 请求效应分析
+2025-04-14 23:10:50,216 - INFO - 用户 gar 下载风险排序结果文件
+2025-04-14 23:11:00,649 - INFO - 用户 gar (ID: 2) 请求风险溯源分析
+2025-04-14 23:11:10,738 - INFO - 用户 gar 下载风险溯源结果文件
+2025-04-15 14:48:54,073 - WARNING - Not Found: /favicon.ico
+2025-04-15 14:50:11,271 - WARNING - Not Found: /favicon.ico
+2025-04-15 14:51:11,491 - INFO - 用户 zym (ID: 3) 请求效应分析
+2025-04-15 15:36:20,092 - WARNING - Not Found: /favicon.ico
+2025-05-11 20:47:11,917 - WARNING - Not Found: /favicon.ico
+2025-05-11 20:53:12,885 - INFO - 用户 wanghaining (ID: 5) 请求文件处理
+2025-05-11 20:53:16,444 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-11 20:53:16,444 - INFO - NumExpr defaulting to 8 threads.
+2025-05-11 20:54:15,340 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\calculate.py changed, reloading.
+2025-05-11 20:54:17,283 - INFO - 用户 wanghaining (ID: 5) 请求文件处理
+2025-05-11 20:54:17,518 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-11 20:54:17,518 - INFO - NumExpr defaulting to 8 threads.
+2025-05-11 20:54:31,591 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\calculate.py changed, reloading.
+2025-05-11 20:54:46,510 - INFO - 用户 wanghaining (ID: 5) 请求文件处理
+2025-05-11 20:54:46,733 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-11 20:54:46,733 - INFO - NumExpr defaulting to 8 threads.
+2025-05-11 20:54:53,515 - INFO - 用户 wanghaining 下载结果文件
+2025-05-11 20:57:02,181 - INFO - 用户 wanghaining (ID: 5) 请求文件处理
+2025-05-11 20:57:08,669 - INFO - 用户 wanghaining 下载结果文件
+2025-05-11 20:57:27,700 - INFO - 用户 wanghaining (ID: 5) 请求效应分析
+2025-05-11 20:58:06,877 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\calculate_effects.py changed, reloading.
+2025-05-11 21:03:20,508 - INFO - 用户 wanghaining (ID: 5) 请求效应分析
+2025-05-11 21:03:39,442 - INFO - 用户 wanghaining (ID: 5) 请求文件处理
+2025-05-11 21:03:39,829 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-11 21:03:39,829 - INFO - NumExpr defaulting to 8 threads.
+2025-05-11 21:03:49,337 - INFO - 用户 wanghaining (ID: 5) 请求效应分析
+2025-05-11 21:05:41,888 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\calculate_effects.py changed, reloading.
+2025-05-11 21:05:46,210 - INFO - 用户 wanghaining (ID: 5) 请求效应分析
+2025-05-11 21:06:00,934 - INFO - 用户 wanghaining (ID: 5) 请求文件处理
+2025-05-11 21:06:01,314 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-11 21:06:01,314 - INFO - NumExpr defaulting to 8 threads.
+2025-05-11 21:06:12,364 - INFO - 用户 wanghaining (ID: 5) 请求效应分析
+2025-05-11 21:06:12,490 - ERROR - 效应分析计算错误: name 'np' is not defined
+2025-05-11 21:06:26,509 - INFO - D:\环境平台开发\pollutant_identification_system\main_app\calculate_effects.py changed, reloading.
+2025-05-11 21:06:27,170 - INFO - 用户 wanghaining (ID: 5) 请求效应分析
+2025-05-11 21:06:46,776 - INFO - 用户 wanghaining (ID: 5) 请求文件处理
+2025-05-11 21:06:47,149 - INFO - Note: NumExpr detected 22 cores but "NUMEXPR_MAX_THREADS" not set, so enforcing safe limit of 8.
+2025-05-11 21:06:47,149 - INFO - NumExpr defaulting to 8 threads.
+2025-05-11 21:06:57,123 - INFO - 用户 wanghaining (ID: 5) 请求效应分析
+2025-05-11 21:07:05,803 - INFO - 用户 wanghaining 下载风险排序结果文件
+2025-05-11 21:08:20,391 - INFO - 用户 wanghaining (ID: 5) 请求风险溯源分析
+2025-05-11 21:08:29,055 - INFO - 用户 wanghaining 下载风险溯源结果文件
+2025-05-11 21:11:59,737 - INFO - 用户 wanghaining (ID: 5) 请求文件处理
+2025-05-11 21:12:06,781 - INFO - 用户 wanghaining 下载结果文件
+2025-05-11 21:12:25,765 - INFO - 用户 wanghaining (ID: 5) 请求效应分析
+2025-05-11 21:12:31,385 - INFO - 用户 wanghaining 下载风险排序结果文件
+2025-05-11 21:12:55,356 - INFO - 用户 wanghaining (ID: 5) 请求风险溯源分析
+2025-05-11 21:13:02,394 - INFO - 用户 wanghaining 下载风险溯源结果文件
+2025-05-11 21:49:37,818 - INFO - 用户 wanghaining (ID: 5) 请求文件处理
+2025-05-11 21:49:45,085 - INFO - 用户 wanghaining 下载结果文件
+2025-05-11 21:50:03,949 - INFO - 用户 wanghaining (ID: 5) 请求效应分析
+2025-05-11 21:50:08,440 - INFO - 用户 wanghaining 下载风险排序结果文件
+2025-05-11 21:50:41,066 - INFO - 用户 wanghaining (ID: 5) 请求风险溯源分析
+2025-05-11 21:50:49,419 - INFO - 用户 wanghaining 下载风险溯源结果文件

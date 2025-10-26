@@ -1,0 +1,690 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>园区高风险新污染物智慧识别系统 (v1.0) - 风险溯源</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+            position: relative;
+            --nju-purple: #8e7cc3;
+            --main-bg-color: rgba(11, 16, 51, 0.7);
+            --accent-blue: #3392ff;
+            --header-height: 70px;
+        }
+        
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-image: url('{% static "main_app/imags/VCG211410114301.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+        
+        .background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(11, 16, 51, 0.3) 0%, rgba(11, 16, 51, 0.7) 100%);
+        }
+        
+        .container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        .header {
+            height: var(--header-height);
+            background-color: rgba(33, 28, 58, 0.8);
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        .header-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .logo-combined {
+            position: absolute;
+            right: 20px;
+            height: 60px;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+        }
+        
+        .main-content {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - var(--header-height));
+        }
+        
+        .sidebar {
+            width: 200px;
+            background-color: rgba(33, 28, 58, 0.8);
+            backdrop-filter: blur(5px);
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-item {
+            padding: 20px;
+            font-size: 1.1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .nav-item a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .nav-item:hover {
+            background-color: rgba(142, 124, 195, 0.2);
+        }
+        
+        .nav-item.active {
+            background-color: var(--main-bg-color);
+            border-left: 4px solid var(--accent-blue);
+        }
+        
+        .content-area {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        
+        .upload-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        
+        .upload-box {
+            width: 80%;
+            height: 300px;
+            background-color: var(--main-bg-color);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            transition: all 0.3s;
+            animation: fadeIn 0.5s ease-out forwards, slideIn 0.5s ease-out forwards;
+        }
+        
+        .upload-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            border-color: rgba(142, 124, 195, 0.4);
+        }
+        
+        .upload-icon {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .plus-icon {
+            font-size: 40px;
+            color: white;
+        }
+        
+        .upload-text {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 30px;
+            text-align: center;
+            padding: 0 20px;
+        }
+        
+        .button-area {
+            display: flex;
+            gap: 20px;
+        }
+        
+        .btn {
+            background: linear-gradient(to right, #1a67c9, #3392ff);
+            border: none;
+            color: white;
+            padding: 10px 25px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .btn:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .btn:hover:before {
+            left: 100%;
+        }
+        
+        .btn:disabled {
+            background: linear-gradient(to right, #767676, #a0a0a0);
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .results-section {
+            background-color: var(--main-bg-color);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .results-text {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        .download-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            width: 100%;
+        }
+        
+        .download-btn {
+            margin-top: 20px;
+            text-decoration: none;
+        }
+        
+        #calculation-status {
+            margin-top: 15px; 
+            color: rgba(255, 255, 255, 0.7); 
+            text-align: center; 
+            display: none;
+        }
+        
+        .loading-spinner {
+            margin: 10px auto; 
+            width: 30px; 
+            height: 30px; 
+            border: 3px solid rgba(255, 255, 255, 0.3); 
+            border-radius: 50%; 
+            border-top-color: var(--accent-blue); 
+            animation: spin 1s linear infinite;
+        }
+        
+        #result-ready {
+            margin-top: 15px; 
+            display: none;
+            width: 100%;
+        }
+        
+        .logout-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+        
+        .logout-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .message-container {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .message {
+            padding: 15px 20px;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .message.error {
+            background-color: rgba(220, 53, 69, 0.85);
+        }
+        
+        .message.success {
+            background-color: rgba(40, 167, 69, 0.85);
+        }
+        
+        .message.info {
+            background-color: rgba(0, 123, 255, 0.85);
+        }
+        
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .prev-button {
+            background-color: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        
+        .prev-button:hover {
+            color: white;
+        }
+        
+        .file-input {
+            display: none;
+        }
+        
+        .file-name {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 10px;
+            max-width: 90%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        .edit-path {
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.8rem;
+            text-align: right;
+            width: 100%;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    
+    {% if messages %}
+    <div class="message-container">
+        {% for message in messages %}
+            <div class="message {{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    
+    <!-- 添加退出登录按钮 -->
+    <a href="{% url 'logout' %}" class="logout-btn">退出登录</a>
+    
+    <div class="container">
+        <div class="header">
+            <div class="header-title">园区高风险新污染物智慧识别系统 (v1.0)</div>
+            <img src="{% static 'main_app/imags/logo.png' %}" alt="南京大学" class="logo-combined">
+        </div>
+        
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="nav-item"><a href="{% url 'first_page' %}">暴露分析</a></div>
+                <div class="nav-item"><a href="{% url 'second_page' %}">效应分析</a></div>
+                <div class="nav-item active"><a href="#">风险溯源</a></div>
+            </div>
+            
+            <div class="content-area">
+                <div class="upload-section">
+                    <div class="upload-box" id="tracing-upload">
+                        <div class="upload-icon">
+                            <div class="plus-icon">+</div>
+                        </div>
+                        <div class="upload-text">点击或拖动上传企业生产使用化学品清单</div>
+                        <input type="file" class="file-input" id="tracing-file" accept=".xlsx,.xls">
+                        <div class="file-name" id="tracing-file-name"></div>
+                        <div class="button-area">
+                            <button class="btn" id="tracing-template">模板下载</button>
+                            <button class="btn" id="start-calculation" disabled>开始计算</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="results-section">
+                    <div class="results-text" id="initial-text">上传企业生产使用化学品清单后点击开始计算</div>
+                    
+                    <div id="calculation-status">
+                        <div>计算中，请稍候...</div>
+                        <div class="loading-spinner"></div>
+                    </div>
+                    
+                    <div id="result-ready">
+                        <div class="results-text">风险溯源计算完成！</div>
+                        <div class="download-section">
+                            <div class="results-text">点击下载高风险物质溯源结果</div>
+                            <a id="download-results" href="#" class="btn download-btn">下载结果</a>
+                        </div>
+                        <div class="edit-path">修改保存路径</div>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="{% url 'first_page' %}" class="prev-button">
+                            <span>&larr;</span> 返回暴露分析
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 添加背景视差效果
+            document.addEventListener('mousemove', function(e) {
+                const background = document.querySelector('.background');
+                const x = e.clientX / window.innerWidth;
+                const y = e.clientY / window.innerHeight;
+                
+                background.style.backgroundPosition = `${50 + x * 5}% ${50 + y * 5}%`;
+            });
+            
+            // 获取元素
+            const tracingUpload = document.getElementById('tracing-upload');
+            const tracingFileInput = document.getElementById('tracing-file');
+            const tracingFileName = document.getElementById('tracing-file-name');
+            const startCalculationBtn = document.getElementById('start-calculation');
+            const calculationStatus = document.getElementById('calculation-status');
+            const initialText = document.getElementById('initial-text');
+            const resultReady = document.getElementById('result-ready');
+            const downloadResultsBtn = document.getElementById('download-results');
+            
+            // 状态检查变量
+            let taskCheckInterval = null;
+            let currentTaskId = null;
+            
+            // 文件上传功能
+            tracingUpload.addEventListener('click', function(e) {
+                // 不在点击按钮时触发文件对话框
+                if (!e.target.classList.contains('btn')) {
+                    tracingFileInput.click();
+                }
+            });
+            
+            tracingFileInput.addEventListener('change', function() {
+                if (this.files.length > 0) {
+                    tracingFileName.textContent = this.files[0].name;
+                    tracingUpload.style.borderColor = 'rgba(51, 146, 255, 0.7)';
+                    startCalculationBtn.disabled = false;
+                    startCalculationBtn.style.opacity = '1';
+                } else {
+                    startCalculationBtn.disabled = true;
+                    startCalculationBtn.style.opacity = '0.5';
+                }
+            });
+            
+            // 设置文件拖放区域
+            tracingUpload.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                tracingUpload.style.borderColor = 'rgba(51, 146, 255, 0.7)';
+                tracingUpload.style.backgroundColor = 'rgba(21, 26, 61, 0.8)';
+            });
+            
+            tracingUpload.addEventListener('dragleave', function() {
+                tracingUpload.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                tracingUpload.style.backgroundColor = 'rgba(11, 16, 51, 0.7)';
+            });
+            
+            tracingUpload.addEventListener('drop', function(e) {
+                e.preventDefault();
+                tracingUpload.style.borderColor = 'rgba(255, 255, 255, 0.1)';
+                tracingUpload.style.backgroundColor = 'rgba(11, 16, 51, 0.7)';
+                
+                // 处理拖放的文件 (只接受Excel文件)
+                if (e.dataTransfer.files.length > 0) {
+                    const file = e.dataTransfer.files[0];
+                    const fileExt = file.name.split('.').pop().toLowerCase();
+                    
+                    if (fileExt === 'xlsx' || fileExt === 'xls') {
+                        // 创建一个新的FileList对象，包含过滤后的Excel文件
+                        const dataTransfer = new DataTransfer();
+                        dataTransfer.items.add(file);
+                        tracingFileInput.files = dataTransfer.files;
+                        tracingFileName.textContent = file.name;
+                        tracingUpload.style.borderColor = 'rgba(51, 146, 255, 0.7)';
+                        startCalculationBtn.disabled = false;
+                        startCalculationBtn.style.opacity = '1';
+                    } else {
+                        alert('请上传Excel文件 (.xlsx 或 .xls)');
+                    }
+                }
+            });
+            
+            // 模板下载按钮
+            document.getElementById('tracing-template').addEventListener('click', function(e) {
+                e.stopPropagation();
+                window.location.href = "{% url 'download_tracing_template' %}";
+            });
+            
+            // 开始计算按钮
+            startCalculationBtn.addEventListener('click', function() {
+                if (!tracingFileInput.files.length) {
+                    alert('请先选择要上传的文件');
+                    return;
+                }
+                
+                // 显示加载状态
+                initialText.style.display = 'none';
+                calculationStatus.style.display = 'block';
+                resultReady.style.display = 'none';
+                
+                // 清除任何现有的轮询
+                if (taskCheckInterval) {
+                    clearInterval(taskCheckInterval);
+                    taskCheckInterval = null;
+                }
+                
+                // 创建FormData对象
+                const formData = new FormData();
+                formData.append('tracing_file', tracingFileInput.files[0]);
+                
+                // 发送请求
+                fetch('{% url "process_tracing" %}', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-CSRFToken': "{{ csrf_token }}"
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if(data.status === 'processing') {
+                        // 保存任务ID，并开始轮询检查状态
+                        currentTaskId = data.task_id;
+                        startTaskStatusCheck(data.check_url);
+                    } else if(data.status === 'success') {
+                        // 直接显示结果（如果计算很快完成）
+                        showResults(data.result_id, data.download_url);
+                    } else {
+                        // 显示错误
+                        showError(data.message);
+                    }
+                })
+                .catch(error => {
+                    showError('发生错误: ' + error.message);
+                });
+            });
+            
+            // 开始轮询检查任务状态
+            function startTaskStatusCheck(checkUrl) {
+                // 每2秒检查一次
+                taskCheckInterval = setInterval(function() {
+                    fetch(checkUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        if(data.status === 'success') {
+                            // 任务完成，显示结果
+                            clearInterval(taskCheckInterval);
+                            taskCheckInterval = null;
+                            showResults(data.result_id, data.download_url);
+                        } else if(data.status === 'error') {
+                            // 发生错误
+                            clearInterval(taskCheckInterval);
+                            taskCheckInterval = null;
+                            showError(data.message);
+                        }
+                        // 如果状态仍为'processing'，继续轮询
+                    })
+                    .catch(error => {
+                        clearInterval(taskCheckInterval);
+                        taskCheckInterval = null;
+                        showError('检查任务状态时出错: ' + error.message);
+                    });
+                }, 2000);
+            }
+            
+            // 显示结果
+            function showResults(resultId, downloadUrl) {
+                calculationStatus.style.display = 'none';
+                resultReady.style.display = 'block';
+                
+                // 设置下载链接
+                downloadResultsBtn.href = downloadUrl;
+            }
+            
+            // 显示错误
+            function showError(message) {
+                calculationStatus.style.display = 'none';
+                initialText.style.display = 'block';
+                initialText.textContent = '发生错误: ' + message;
+                initialText.style.color = '#ff5252';
+            }
+            
+            // 自动隐藏消息
+            const messages = document.querySelectorAll('.message');
+            messages.forEach(function(message) {
+                setTimeout(function() {
+                    message.style.opacity = '0';
+                    message.style.transition = 'opacity 0.5s';
+                    setTimeout(function() {
+                        message.remove();
+                    }, 500);
+                }, 5000);
+            });
+        });
+    </script>
+    
+    <!-- 添加CSRF令牌 -->
+    {% csrf_token %}
+</body>
+</html>

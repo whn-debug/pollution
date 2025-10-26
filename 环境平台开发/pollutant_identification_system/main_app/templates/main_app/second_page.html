@@ -1,0 +1,749 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>园区高风险新污染物智慧识别系统 (v1.0) - 效应分析</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            overflow: hidden;
+            color: white;
+            position: relative;
+            --nju-purple: #8e7cc3;
+            --main-bg-color: rgba(11, 16, 51, 0.7);
+            --accent-blue: #3392ff;
+            --header-height: 70px;
+        }
+        
+        .background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            background-image: url('{% static "main_app/imags/VCG211410114301.jpg" %}');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            opacity: 1;
+        }
+        
+        .background::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at center, rgba(11, 16, 51, 0.3) 0%, rgba(11, 16, 51, 0.7) 100%);
+        }
+        
+        .container {
+            position: relative;
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        
+        .header {
+            height: var(--header-height);
+            background-color: rgba(33, 28, 58, 0.8);
+            backdrop-filter: blur(5px);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+        }
+        
+        .header-title {
+            font-size: 1.8rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+            text-align: center;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .logo-combined {
+            position: absolute;
+            right: 20px;
+            height: 60px;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.2));
+        }
+        
+        .main-content {
+            display: flex;
+            flex: 1;
+            height: calc(100vh - var(--header-height));
+        }
+        
+        .sidebar {
+            width: 200px;
+            background-color: rgba(33, 28, 58, 0.8);
+            backdrop-filter: blur(5px);
+            border-right: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .nav-item {
+            padding: 20px;
+            font-size: 1.1rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+        }
+        
+        .nav-item a {
+            text-decoration: none;
+            color: white;
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .nav-item:hover {
+            background-color: rgba(142, 124, 195, 0.2);
+        }
+        
+        .nav-item.active {
+            background-color: var(--main-bg-color);
+            border-left: 4px solid var(--accent-blue);
+        }
+        
+        .content-area {
+            flex: 1;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+        }
+        
+        .select-section {
+            background-color: var(--main-bg-color);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            padding: 30px;
+            margin-bottom: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            animation: fadeIn 0.5s ease-out forwards, slideIn 0.5s ease-out forwards;
+        }
+        
+        .select-section h2 {
+            margin-bottom: 30px;
+            font-size: 1.5rem;
+            color: rgba(255, 255, 255, 0.9);
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+        
+        .select-container {
+            width: 100%;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+        
+        .select-label {
+            display: block;
+            margin-bottom: 10px;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1.1rem;
+        }
+        
+        .custom-select {
+            position: relative;
+            width: 100%;
+        }
+        
+        .select-box {
+            width: 100%;
+            padding: 15px;
+            background-color: rgba(33, 28, 58, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            appearance: none;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            outline: none;
+            transition: all 0.3s;
+        }
+        
+        .select-box:hover {
+            border-color: var(--accent-blue);
+        }
+        
+        .select-arrow {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-top: 8px solid rgba(255, 255, 255, 0.8);
+            pointer-events: none;
+        }
+        
+        .btn {
+            background: linear-gradient(to right, #1a67c9, #3392ff);
+            border: none;
+            color: white;
+            padding: 12px 30px;
+            font-size: 1.1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .btn:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: 0.5s;
+        }
+        
+        .btn:hover:before {
+            left: 100%;
+        }
+        
+        .btn:disabled {
+            background: linear-gradient(to right, #767676, #a0a0a0);
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .results-section {
+            background-color: var(--main-bg-color);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .results-text {
+            font-size: 1.2rem;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 20px;
+            text-align: center;
+            width: 100%;
+        }
+        
+        #calculation-status {
+            margin-top: 15px; 
+            color: rgba(255, 255, 255, 0.7); 
+            text-align: center; 
+            display: none;
+        }
+        
+        .loading-spinner {
+            margin: 10px auto; 
+            width: 30px; 
+            height: 30px; 
+            border: 3px solid rgba(255, 255, 255, 0.3); 
+            border-radius: 50%; 
+            border-top-color: var(--accent-blue); 
+            animation: spin 1s linear infinite;
+        }
+        
+        .table-container {
+            width: 100%;
+            max-width: 900px;
+            margin: 20px 0;
+            overflow-x: auto;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            border-radius: 8px;
+            display: none;
+        }
+        
+        /* 表格整体样式优化 */
+        .risk-table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: rgba(33, 28, 58, 0.6);
+            text-align: center; /* 设置所有单元格默认居中 */
+        }
+
+        /* 表头单元格样式 */
+        .risk-table th {
+            background-color: rgba(51, 146, 255, 0.3);
+            color: white;
+            font-weight: bold;
+            text-align: center; /* 表头居中 */
+            padding: 15px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        /* 数据单元格样式 */
+        .risk-table td {
+            padding: 12px 15px;
+            text-align: center; /* 数据居中 */
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .risk-table tr:hover {
+            background-color: rgba(142, 124, 195, 0.2);
+        }
+        
+        .risk-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .risk-high {
+            color: #ff5252;
+            font-weight: bold;
+        }
+        
+        .risk-medium {
+            color: #ffbc42;
+            font-weight: bold;
+        }
+        
+        .risk-low {
+            color: #4caf50;
+            font-weight: bold;
+        }
+        
+        .logout-btn {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 8px 15px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s;
+            z-index: 10;
+        }
+        
+        .logout-btn:hover {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+        
+        .message-container {
+            position: fixed;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+            min-width: 300px;
+            text-align: center;
+        }
+        
+        .message {
+            padding: 15px 20px;
+            color: white;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        
+        .message.error {
+            background-color: rgba(220, 53, 69, 0.85);
+        }
+        
+        .message.success {
+            background-color: rgba(40, 167, 69, 0.85);
+        }
+        
+        .message.info {
+            background-color: rgba(0, 123, 255, 0.85);
+        }
+        
+        .download-btn-container {
+            margin-top: 20px;
+            display: none;
+        }
+        
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .prev-button, .next-button {
+            background-color: transparent;
+            border: none;
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            text-decoration: none;
+        }
+        
+        .prev-button:hover, .next-button:hover {
+            color: white;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slideIn {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="background"></div>
+    
+    {% if messages %}
+    <div class="message-container">
+        {% for message in messages %}
+            <div class="message {{ message.tags }}">
+                {{ message }}
+            </div>
+        {% endfor %}
+    </div>
+    {% endif %}
+    
+    <!-- 添加退出登录按钮 -->
+    <a href="{% url 'logout' %}" class="logout-btn">退出登录</a>
+    
+    <div class="container">
+        <div class="header">
+            <div class="header-title">园区高风险新污染物智慧识别系统 (v1.0)</div>
+            <img src="{% static 'main_app/imags/logo.png' %}" alt="南京大学" class="logo-combined">
+        </div>
+        
+        <div class="main-content">
+            <div class="sidebar">
+                <div class="nav-item"><a href="{% url 'first_page' %}">暴露分析</a></div>
+                <div class="nav-item active"><a href="{% url 'second_page' %}">效应分析</a></div>
+                <div class="nav-item"><a href="{% url 'risk_tracing' %}">风险溯源</a></div>
+            </div>
+            
+            <div class="content-area">
+                <div class="select-section">
+                    <h2>请选择毒性终点进行效应分析和风险排序</h2>
+                    <div class="select-container">
+                        <label for="toxicity-endpoint" class="select-label">毒性终点选择：</label>
+                        <div class="custom-select">
+                            <select id="toxicity-endpoint" class="select-box">
+                                <option value="" selected disabled>请选择毒性终点</option>
+                                <option value="acute_toxicity">急性毒性</option>
+                                <option value="carcinogenicity">致癌性</option>
+                                <option value="mutagenicity">致突变性</option>
+                                <option value="reproductive_toxicity">生殖毒性</option>
+                                <option value="developmental_toxicity">发育毒性</option>
+                                <option value="neurotoxicity">神经毒性</option>
+                                <option value="immunotoxicity">免疫毒性</option>
+                                <option value="endocrine_disruption">内分泌干扰</option>
+                            </select>
+                            <div class="select-arrow"></div>
+                        </div>
+                    </div>
+                    <button id="submit-endpoint" class="btn" disabled>开始分析</button>
+                </div>
+                
+                <div class="results-section">
+                    <div class="results-text" id="initial-text">请先选择毒性终点，然后点击开始分析按钮</div>
+                    
+                    <div id="calculation-status">
+                        <div>分析和排序中，请稍候...</div>
+                        <div class="loading-spinner"></div>
+                    </div>
+                    
+                    <!-- 风险排序结果表格 -->
+                    <div class="table-container" id="ranking-table-container">
+                        <h2 style="color: white; margin-bottom: 15px; text-align: center;">风险排序结果</h2>
+                        <table class="risk-table">
+                            <thead id="ranking-table-head">
+                                <!-- 表头将由JavaScript动态生成 -->
+                            </thead>
+                            <tbody id="ranking-table-body">
+                                <!-- 排序结果将通过JavaScript动态插入 -->
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                    <!-- 下载按钮 -->
+                    <div class="download-btn-container" id="download-container">
+                        <a id="download-excel" href="#" class="btn">下载Excel结果</a>
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <a href="{% url 'first_page' %}" class="prev-button">
+                            <span>&larr;</span> 返回暴露分析
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 获取元素
+            const toxicityEndpoint = document.getElementById('toxicity-endpoint');
+            const submitButton = document.getElementById('submit-endpoint');
+            const calculationStatus = document.getElementById('calculation-status');
+            const initialText = document.getElementById('initial-text');
+            const rankingTableContainer = document.getElementById('ranking-table-container');
+            const rankingTableHead = document.getElementById('ranking-table-head');
+            const rankingTableBody = document.getElementById('ranking-table-body');
+            const downloadContainer = document.getElementById('download-container');
+            const downloadExcelBtn = document.getElementById('download-excel');
+            
+            // 状态检查变量
+            let taskCheckInterval = null;
+            let currentTaskId = null;
+            
+            // 启用/禁用提交按钮
+            toxicityEndpoint.addEventListener('change', function() {
+                if (this.value) {
+                    submitButton.disabled = false;
+                    submitButton.style.opacity = '1';
+                } else {
+                    submitButton.disabled = true;
+                    submitButton.style.opacity = '0.5';
+                }
+            });
+            
+            // 提交效应分析请求
+            submitButton.addEventListener('click', function() {
+                // 显示加载状态
+                initialText.style.display = 'none';
+                calculationStatus.style.display = 'block';
+                rankingTableContainer.style.display = 'none';
+                downloadContainer.style.display = 'none';
+                
+                // 清除任何现有的轮询
+                if (taskCheckInterval) {
+                    clearInterval(taskCheckInterval);
+                    taskCheckInterval = null;
+                }
+                
+                // 创建FormData对象
+                const formData = new FormData();
+                formData.append('endpoint', toxicityEndpoint.value);
+                
+                // 发送请求
+                fetch('{% url "process_endpoint" %}', {
+                    method: 'POST',
+                    body: formData,
+                    headers: {
+                        'X-CSRFToken': "{{ csrf_token }}"
+                    }
+                })
+                .then(response => response.json())
+                .then(data => {
+                    if(data.status === 'processing') {
+                        // 保存任务ID，并开始轮询检查状态
+                        currentTaskId = data.task_id;
+                        startTaskStatusCheck(data.check_url);
+                    } else if(data.status === 'success') {
+                        // 直接显示结果（不太可能走这个分支，但为了完整性）
+                        showResults(data.result_id, data.risk_data, data.download_url);
+                    } else {
+                        // 显示错误
+                        showError(data.message);
+                    }
+                })
+                .catch(error => {
+                    showError('发生错误: ' + error.message);
+                });
+            });
+            
+            // 开始轮询检查任务状态
+            function startTaskStatusCheck(checkUrl) {
+                // 每2秒检查一次
+                taskCheckInterval = setInterval(function() {
+                    fetch(checkUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        if(data.status === 'success') {
+                            // 任务完成，显示结果
+                            clearInterval(taskCheckInterval);
+                            taskCheckInterval = null;
+                            showResults(data.result_id, data.risk_data, data.download_url);
+                        } else if(data.status === 'error') {
+                            // 发生错误
+                            clearInterval(taskCheckInterval);
+                            taskCheckInterval = null;
+                            showError(data.message);
+                        }
+                        // 如果状态仍为'processing'，继续轮询
+                    })
+                    .catch(error => {
+                        clearInterval(taskCheckInterval);
+                        taskCheckInterval = null;
+                        showError('检查任务状态时出错: ' + error.message);
+                    });
+                }, 2000);
+            }
+            
+            // 显示结果
+            function showResults(resultId, riskData, downloadUrl) {
+                calculationStatus.style.display = 'none';
+                
+                if (!riskData || riskData.length === 0) {
+                    showError('没有返回有效数据');
+                    return;
+                }
+                
+                // 清空表格头和表格体
+                rankingTableHead.innerHTML = '';
+                rankingTableBody.innerHTML = '';
+                
+                // 获取数据中的所有键作为表头
+                const keys = Object.keys(riskData[0]);
+                
+                // 创建表头行
+                const headerRow = document.createElement('tr');
+                
+                // 添加排名列
+                const rankHeader = document.createElement('th');
+                rankHeader.textContent = '排名';
+                headerRow.appendChild(rankHeader);
+                
+                // 为每个键创建表头单元格
+                keys.forEach(key => {
+                    const th = document.createElement('th');
+                    th.textContent = key; // 直接使用字典键作为列名
+                    headerRow.appendChild(th);
+                });
+                
+                // 添加表头到表格
+                rankingTableHead.appendChild(headerRow);
+                
+                // 填充表格数据（最多5行）
+                const maxRows = Math.min(5, riskData.length);
+                for (let i = 0; i < maxRows; i++) {
+                    const item = riskData[i];
+                    const row = document.createElement('tr');
+                    
+                    // 添加排名列
+                    const rankCell = document.createElement('td');
+                    rankCell.textContent = i + 1;
+                    row.appendChild(rankCell);
+                    
+                    // 为每个键创建数据单元格
+                    keys.forEach(key => {
+                        const td = document.createElement('td');
+                        
+                        // 对于数值类型，显示两位小数
+                        if (typeof item[key] === 'number') {
+                            td.textContent = item[key].toFixed(2);
+                        } else {
+                            td.textContent = item[key];
+                        }
+                        
+                        row.appendChild(td);
+                    });
+                    
+                    rankingTableBody.appendChild(row);
+                }
+                
+                // 如果有更多行，添加提示信息
+                if (riskData.length > 5) {
+                    const infoRow = document.createElement('tr');
+                    const infoCell = document.createElement('td');
+                    infoCell.colSpan = keys.length + 1; // +1 是为了包含排名列
+                    infoCell.textContent = `显示前5条记录，总共 ${riskData.length} 条记录。请下载Excel查看完整结果。`;
+                    infoCell.style.textAlign = 'center';
+                    infoRow.appendChild(infoCell);
+                    rankingTableBody.appendChild(infoRow);
+                }
+                
+                // 显示表格和下载按钮
+                rankingTableContainer.style.display = 'block';
+                downloadContainer.style.display = 'block';
+                
+                // 设置下载链接
+                downloadExcelBtn.href = downloadUrl;
+            }
+            
+            // 显示错误
+            function showError(message) {
+                calculationStatus.style.display = 'none';
+                initialText.style.display = 'block';
+                initialText.textContent = '发生错误: ' + message;
+                initialText.style.color = '#ff5252';
+            }
+            
+            // 自动隐藏消息
+            const messages = document.querySelectorAll('.message');
+            messages.forEach(function(message) {
+                setTimeout(function() {
+                    message.style.opacity = '0';
+                    message.style.transition = 'opacity 0.5s';
+                    setTimeout(function() {
+                        message.remove();
+                    }, 500);
+                }, 5000);
+            });
+        });
+    </script>
+    
+    <!-- 添加CSRF令牌 -->
+    {% csrf_token %}
+</body>
+</html>
