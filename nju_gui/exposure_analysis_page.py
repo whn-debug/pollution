@@ -21,11 +21,8 @@ class ExposureAnalysisPage(BackgroundWidget):
     back_to_main = pyqtSignal()  # 返回主页面
     
     def __init__(self):
-        # 使用背景图片
-        background_path = "D:\\nju_gui\\VCG211410114301.jpg"
-        if not os.path.exists(background_path):
-            background_path = ""
-        super().__init__(background_path)
+        # 使用渐变背景
+        super().__init__(use_gradient=True)
         
         # 状态变量
         self.excel1_1_path = None  # 校正数据文件路径
@@ -81,12 +78,14 @@ class ExposureAnalysisPage(BackgroundWidget):
                 font-size: 24px;
                 font-weight: bold;
                 padding: 10px;
+                font-family: "Microsoft YaHei", sans-serif;
+                letter-spacing: 2px;
             }
         """)
         
         # 南京大学Logo
         nju_logo = QLabel()
-        logo_path = "D:\\nju_gui\\logo.png"
+        logo_path = "./logo.png"
         if os.path.exists(logo_path):
             logo_pixmap = QPixmap(logo_path)
             scaled_logo = logo_pixmap.scaled(100, 75, Qt.KeepAspectRatio, Qt.SmoothTransformation)
@@ -112,51 +111,55 @@ class ExposureAnalysisPage(BackgroundWidget):
         tabs_layout = QHBoxLayout()
         tabs_layout.setSpacing(0)
         
-        # 模块1：暴露分析（当前活跃）
+        # 模块1：暴露分析（当前活跃 - 毛玻璃效果）
         module1_tab = QLabel("模块1 暴露分析")
         module1_tab.setFixedHeight(50)
         module1_tab.setAlignment(Qt.AlignCenter)
         module1_tab.setStyleSheet("""
             QLabel {
-                background-color: white;
-                color: #333;
+                background-color: rgba(255, 255, 255, 0.25);
+                color: white;
                 font-size: 18px;
                 font-weight: bold;
-                border: 2px solid #ddd;
-                border-bottom: none;
+                border: 1px solid rgba(255, 255, 255, 0.4);
+                border-bottom: 2px solid rgba(102, 126, 234, 0.8);
+                border-radius: 8px 8px 0 0;
                 padding: 10px 30px;
+                font-family: "Microsoft YaHei", sans-serif;
             }
         """)
-        
-        # 模块2：风险表征
+
+        # 模块2：风险表征（非活跃）
         module2_tab = QLabel("模块2 风险表征")
         module2_tab.setFixedHeight(50)
         module2_tab.setAlignment(Qt.AlignCenter)
         module2_tab.setStyleSheet("""
             QLabel {
-                background-color: rgba(255, 255, 255, 0.7);
-                color: #666;
+                background-color: rgba(255, 255, 255, 0.1);
+                color: rgba(255, 255, 255, 0.6);
                 font-size: 18px;
-                border: 2px solid #ddd;
-                border-bottom: none;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 8px 8px 0 0;
                 padding: 10px 30px;
-                border-left: none;
+                font-family: "Microsoft YaHei", sans-serif;
+                margin-left: 10px;
             }
         """)
-        
-        # 模块3：风险溯源
+
+        # 模块3：风险溯源（非活跃）
         module3_tab = QLabel("模块3 风险溯源")
         module3_tab.setFixedHeight(50)
         module3_tab.setAlignment(Qt.AlignCenter)
         module3_tab.setStyleSheet("""
             QLabel {
-                background-color: rgba(255, 255, 255, 0.7);
-                color: #666;
+                background-color: rgba(255, 255, 255, 0.1);
+                color: rgba(255, 255, 255, 0.6);
                 font-size: 18px;
-                border: 2px solid #ddd;
-                border-bottom: none;
+                border: 1px solid rgba(255, 255, 255, 0.2);
+                border-radius: 8px 8px 0 0;
                 padding: 10px 30px;
-                border-left: none;
+                font-family: "Microsoft YaHei", sans-serif;
+                margin-left: 10px;
             }
         """)
         
@@ -169,13 +172,13 @@ class ExposureAnalysisPage(BackgroundWidget):
     
     def create_main_content(self, parent_layout):
         """创建主要内容区域"""
-        # 主容器
+        # 主容器 - 毛玻璃效果
         main_container = QFrame()
         main_container.setStyleSheet("""
             QFrame {
-                background-color: rgba(255, 255, 255, 0.95);
-                border: 2px solid #ddd;
-                border-top: none;
+                background-color: rgba(255, 255, 255, 0.15);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 0 0 16px 16px;
                 padding: 20px;
             }
         """)
@@ -201,18 +204,22 @@ class ExposureAnalysisPage(BackgroundWidget):
         # 结果显示区域
         self.create_result_area(main_content_layout)
         
-        # 提示信息
-        tip_label = QLabel("提示：模块1-1 ～ 1-3逐步解锁，指示灯显示绿色的模块为当前可操作模块；显示红色的模块当前不可操作模块。")
+        # 提示信息 - 紧凑样式
+        tip_label = QLabel("💡 提示：模块1-1 ～ 1-3逐步解锁，绿色指示灯为可操作模块，红色为锁定状态")
         tip_label.setStyleSheet("""
             QLabel {
-                color: #666;
-                font-size: 14px;
-                padding: 10px;
-                background-color: rgba(255, 235, 59, 0.3);
-                border-radius: 5px;
+                color: rgba(255, 255, 255, 0.9);
+                font-size: 12px;
+                font-weight: bold;
+                padding: 8px 15px;
+                background-color: rgba(255, 179, 71, 0.15);
+                border: 1px solid rgba(255, 179, 71, 0.3);
+                border-radius: 6px;
+                font-family: "Microsoft YaHei", sans-serif;
             }
         """)
         tip_label.setWordWrap(True)
+        tip_label.setMaximumHeight(40)  # 限制最大高度
         main_content_layout.addWidget(tip_label)
         
         parent_layout.addWidget(main_container)
@@ -223,12 +230,13 @@ class ExposureAnalysisPage(BackgroundWidget):
         module1_1_container.setFixedWidth(280)
         module1_1_container.setStyleSheet("""
             QFrame {
-                border: 2px dashed #bbb;
-                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.25);
+                border-radius: 16px;
                 padding: 15px;
             }
         """)
-        
+
         layout = QVBoxLayout(module1_1_container)
         layout.setAlignment(Qt.AlignCenter)
         layout.setSpacing(15)
@@ -236,7 +244,7 @@ class ExposureAnalysisPage(BackgroundWidget):
         # 标题和指示灯
         header_layout = QHBoxLayout()
         self.module1_1 = QLabel("●")
-        self.module1_1.setStyleSheet("QLabel { color: #27ae60; font-size: 20px; }")
+        self.module1_1.setStyleSheet("QLabel { color: #00f2a0; font-size: 20px; }")  # 现代绿色
         
         title_label = QLabel("模块1-1\n仪器校正")
         title_label.setAlignment(Qt.AlignCenter)
@@ -244,7 +252,8 @@ class ExposureAnalysisPage(BackgroundWidget):
             QLabel {
                 font-size: 16px;
                 font-weight: bold;
-                color: #333;
+                color: white;
+                font-family: "Microsoft YaHei", sans-serif;
             }
         """)
         
@@ -258,15 +267,20 @@ class ExposureAnalysisPage(BackgroundWidget):
         upload_btn_1_1.setFixedHeight(45)
         upload_btn_1_1.setStyleSheet("""
             QPushButton {
-                background-color: #3498db;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(102, 126, 234, 1.0),
+                    stop:1 rgba(118, 75, 162, 1.0));
                 color: white;
                 border: none;
                 border-radius: 8px;
                 font-size: 14px;
                 font-weight: bold;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QPushButton:hover {
-                background-color: #2980b9;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(122, 146, 254, 1.0),
+                    stop:1 rgba(138, 95, 182, 1.0));
             }
         """)
         upload_btn_1_1.clicked.connect(self.upload_excel_1_1)
@@ -277,14 +291,15 @@ class ExposureAnalysisPage(BackgroundWidget):
         download_template_1_1.setFixedHeight(35)
         download_template_1_1.setStyleSheet("""
             QPushButton {
-                background-color: #95a5a6;
+                background-color: rgba(255, 255, 255, 0.2);
                 color: white;
-                border: none;
+                border: 1px solid rgba(255, 255, 255, 0.3);
                 border-radius: 6px;
                 font-size: 12px;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QPushButton:hover {
-                background-color: #7f8c8d;
+                background-color: rgba(255, 255, 255, 0.3);
             }
         """)
         download_template_1_1.clicked.connect(self.download_template_1_1)
@@ -298,12 +313,13 @@ class ExposureAnalysisPage(BackgroundWidget):
         module1_2_container.setFixedWidth(280)
         module1_2_container.setStyleSheet("""
             QFrame {
-                border: 2px dashed #bbb;
-                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.25);
+                border-radius: 16px;
                 padding: 15px;
             }
         """)
-        
+
         layout = QVBoxLayout(module1_2_container)
         layout.setAlignment(Qt.AlignCenter)
         layout.setSpacing(15)
@@ -319,7 +335,8 @@ class ExposureAnalysisPage(BackgroundWidget):
             QLabel {
                 font-size: 16px;
                 font-weight: bold;
-                color: #333;
+                color: white;
+                font-family: "Microsoft YaHei", sans-serif;
             }
         """)
         
@@ -334,19 +351,25 @@ class ExposureAnalysisPage(BackgroundWidget):
         self.upload_btn_1_2.setEnabled(False)  # 初始禁用
         self.upload_btn_1_2.setStyleSheet("""
             QPushButton {
-                background-color: #bdc3c7;
-                color: #7f8c8d;
-                border: none;
+                background-color: rgba(255, 255, 255, 0.1);
+                color: rgba(255, 255, 255, 0.4);
+                border: 1px solid rgba(255, 255, 255, 0.2);
                 border-radius: 8px;
                 font-size: 14px;
                 font-weight: bold;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QPushButton:enabled {
-                background-color: #3498db;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(102, 126, 234, 1.0),
+                    stop:1 rgba(118, 75, 162, 1.0));
                 color: white;
+                border: none;
             }
             QPushButton:enabled:hover {
-                background-color: #2980b9;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(122, 146, 254, 1.0),
+                    stop:1 rgba(138, 95, 182, 1.0));
             }
         """)
         self.upload_btn_1_2.clicked.connect(self.upload_excel_1_2)
@@ -357,14 +380,15 @@ class ExposureAnalysisPage(BackgroundWidget):
         download_template_1_2.setFixedHeight(35)
         download_template_1_2.setStyleSheet("""
             QPushButton {
-                background-color: #95a5a6;
+                background-color: rgba(255, 255, 255, 0.2);
                 color: white;
-                border: none;
+                border: 1px solid rgba(255, 255, 255, 0.3);
                 border-radius: 6px;
                 font-size: 12px;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QPushButton:hover {
-                background-color: #7f8c8d;
+                background-color: rgba(255, 255, 255, 0.3);
             }
         """)
         download_template_1_2.clicked.connect(self.download_template_1_2)
@@ -378,12 +402,13 @@ class ExposureAnalysisPage(BackgroundWidget):
         module1_3_container.setFixedWidth(280)
         module1_3_container.setStyleSheet("""
             QFrame {
-                border: 2px dashed #bbb;
-                border-radius: 10px;
+                background-color: rgba(255, 255, 255, 0.1);
+                border: 1px solid rgba(255, 255, 255, 0.25);
+                border-radius: 16px;
                 padding: 15px;
             }
         """)
-        
+
         layout = QVBoxLayout(module1_3_container)
         layout.setAlignment(Qt.AlignCenter)
         layout.setSpacing(15)
@@ -399,7 +424,8 @@ class ExposureAnalysisPage(BackgroundWidget):
             QLabel {
                 font-size: 16px;
                 font-weight: bold;
-                color: #333;
+                color: white;
+                font-family: "Microsoft YaHei", sans-serif;
             }
         """)
         
@@ -414,19 +440,25 @@ class ExposureAnalysisPage(BackgroundWidget):
         self.calculate_btn.setEnabled(False)  # 初始禁用
         self.calculate_btn.setStyleSheet("""
             QPushButton {
-                background-color: #bdc3c7;
-                color: #7f8c8d;
-                border: none;
+                background-color: rgba(255, 255, 255, 0.1);
+                color: rgba(255, 255, 255, 0.4);
+                border: 1px solid rgba(255, 255, 255, 0.2);
                 border-radius: 8px;
                 font-size: 14px;
                 font-weight: bold;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QPushButton:enabled {
-                background-color: #27ae60;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(0, 242, 160, 1.0),
+                    stop:1 rgba(0, 210, 140, 1.0));
                 color: white;
+                border: none;
             }
             QPushButton:enabled:hover {
-                background-color: #229954;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(20, 255, 180, 1.0),
+                    stop:1 rgba(20, 230, 160, 1.0));
             }
         """)
         self.calculate_btn.clicked.connect(self.start_calculation)
@@ -438,18 +470,24 @@ class ExposureAnalysisPage(BackgroundWidget):
         self.download_result_btn.setEnabled(False)  # 初始禁用
         self.download_result_btn.setStyleSheet("""
             QPushButton {
-                background-color: #bdc3c7;
-                color: #7f8c8d;
-                border: none;
+                background-color: rgba(255, 255, 255, 0.1);
+                color: rgba(255, 255, 255, 0.4);
+                border: 1px solid rgba(255, 255, 255, 0.2);
                 border-radius: 6px;
                 font-size: 12px;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QPushButton:enabled {
-                background-color: #f39c12;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(255, 179, 71, 1.0),
+                    stop:1 rgba(255, 143, 29, 1.0));
                 color: white;
+                border: none;
             }
             QPushButton:enabled:hover {
-                background-color: #e67e22;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(255, 199, 91, 1.0),
+                    stop:1 rgba(255, 163, 49, 1.0));
             }
         """)
         self.download_result_btn.clicked.connect(self.download_result)
@@ -460,40 +498,49 @@ class ExposureAnalysisPage(BackgroundWidget):
     def create_result_area(self, parent_layout):
         """创建结果显示区域"""
         result_container = QFrame()
-        result_container.setFixedHeight(150)
+        result_container.setMinimumHeight(100)  # 增加最小高度，确保标题和内容都能完整显示
         result_container.setStyleSheet("""
             QFrame {
-                border: 1px solid #ddd;
-                border-radius: 8px;
-                background-color: #f8f9fa;
+                border: none;
+                background-color: transparent;
             }
         """)
-        
+
         layout = QVBoxLayout(result_container)
-        layout.setContentsMargins(15, 15, 15, 15)
-        
-        # 结果标题
+        layout.setContentsMargins(0, 15, 0, 15)  # 增加上下边距
+        layout.setSpacing(10)  # 增加间距让布局更舒适
+
+        # 结果标题 - 简洁的标题样式，无边框
         result_title = QLabel("计算状态")
+        result_title.setFixedHeight(30)  # 明确设置标题高度
         result_title.setStyleSheet("""
             QLabel {
                 font-size: 16px;
                 font-weight: bold;
-                color: #333;
-                margin-bottom: 10px;
+                color: rgba(255, 255, 255, 0.95);
+                font-family: "Microsoft YaHei", sans-serif;
+                letter-spacing: 2px;
+                border: none;
+                background-color: transparent;
+                padding: 0px;
             }
         """)
         layout.addWidget(result_title)
-        
-        # 结果显示文本框
+
+        # 结果显示文本框 - 透明背景，无边框，融入页面
         self.result_display = QTextEdit()
         self.result_display.setReadOnly(True)
+        self.result_display.setMinimumHeight(50)  # 增加最小高度
         self.result_display.setStyleSheet("""
             QTextEdit {
-                border: 1px solid #ddd;
-                border-radius: 5px;
-                padding: 10px;
-                background-color: white;
-                font-size: 12px;
+                border: none;
+                padding: 8px 10px;
+                background-color: transparent;
+                color: rgba(255, 255, 255, 0.85);
+                font-size: 14px;
+                font-weight: bold;
+                font-family: "Microsoft YaHei", sans-serif;
+                line-height: 1.6;
             }
         """)
         self.result_display.setPlainText("等待上传数据并开始计算...")
@@ -510,15 +557,16 @@ class ExposureAnalysisPage(BackgroundWidget):
         back_btn.setFixedSize(120, 40)
         back_btn.setStyleSheet("""
             QPushButton {
-                background-color: rgba(108, 117, 125, 0.8);
+                background-color: rgba(255, 255, 255, 0.2);
                 color: white;
-                border: none;
+                border: 1px solid rgba(255, 255, 255, 0.3);
                 border-radius: 20px;
                 font-size: 14px;
                 font-weight: bold;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QPushButton:hover {
-                background-color: rgba(108, 117, 125, 1.0);
+                background-color: rgba(255, 255, 255, 0.3);
             }
         """)
         back_btn.clicked.connect(self.back_to_main.emit)
@@ -528,15 +576,20 @@ class ExposureAnalysisPage(BackgroundWidget):
         next_btn.setFixedSize(150, 40)
         next_btn.setStyleSheet("""
             QPushButton {
-                background-color: rgba(52, 152, 219, 0.8);
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(102, 126, 234, 0.8),
+                    stop:1 rgba(118, 75, 162, 0.8));
                 color: white;
                 border: none;
                 border-radius: 20px;
                 font-size: 14px;
                 font-weight: bold;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QPushButton:hover {
-                background-color: rgba(52, 152, 219, 1.0);
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(102, 126, 234, 1.0),
+                    stop:1 rgba(118, 75, 162, 1.0));
             }
         """)
         next_btn.clicked.connect(self.check_and_switch_module)

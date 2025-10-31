@@ -12,7 +12,8 @@ class LoginPage(BackgroundWidget):
     login_success = pyqtSignal()
     
     def __init__(self):
-        super().__init__("D:\\nju_gui\\VCG211410114301.jpg")
+        # 使用渐变背景替代图片
+        super().__init__(use_gradient=True)
         # 保存元素引用以便在resizeEvent中使用
         self.form_frame = None
         self.login_title = None
@@ -44,60 +45,90 @@ class LoginPage(BackgroundWidget):
             self.back_btn.setFixedSize(back_width, back_height)
             self.back_btn.setStyleSheet(f"""
                 QPushButton {{
-                    background-color: rgba(52, 152, 219, 0.8);
+                    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                        stop:0 rgba(102, 126, 234, 0.8),
+                        stop:1 rgba(118, 75, 162, 0.8));
                     color: white;
                     border: none;
-                    border-radius: 25px;
+                    border-radius: {back_height // 2}px;
                     font-size: {back_font_size}px;
                     font-weight: bold;
+                    font-family: "Microsoft YaHei", sans-serif;
                 }}
                 QPushButton:hover {{
-                    background-color: rgba(52, 152, 219, 1.0);
+                    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                        stop:0 rgba(102, 126, 234, 1.0),
+                        stop:1 rgba(118, 75, 162, 1.0));
+                    transform: scale(1.05);
+                }}
+                QPushButton:pressed {{
+                    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                        stop:0 rgba(82, 106, 214, 1.0),
+                        stop:1 rgba(98, 55, 142, 1.0));
                 }}
             """)
             
-            # 更新标题字体
+            # 更新标题字体（增强视觉效果）
             self.login_title.setStyleSheet(f"""
                 QLabel {{
-                    color: #2c3e50;
+                    color: #ffffff;
                     font-size: {title_font_size}px;
                     font-weight: bold;
-                    margin-bottom: 40px;
+                    margin-top: 15px;
+                    margin-bottom: 35px;
+                    font-family: "Microsoft YaHei", sans-serif;
+                    letter-spacing: 6px;
                 }}
             """)
             
-            # 更新输入框字体
+            # 更新输入框字体（优化样式）
             input_style = f"""
                 QLineEdit {{
-                    border: 2px solid #bdc3c7;
-                    border-radius: 10px;
-                    padding: 15px;
+                    background-color: rgba(255, 255, 255, 0.95);
+                    border: 2px solid rgba(255, 255, 255, 0.25);
+                    border-radius: 12px;
+                    padding: 16px 20px;
                     font-size: {input_font_size}px;
-                    margin-bottom: 20px;
+                    margin-bottom: 18px;
+                    color: #1a1a2e;
+                    font-family: "Microsoft YaHei", sans-serif;
                 }}
                 QLineEdit:focus {{
-                    border-color: #3498db;
+                    border: 2px solid rgba(102, 126, 234, 1.0);
+                    background-color: rgba(255, 255, 255, 1.0);
+                }}
+                QLineEdit::placeholder {{
+                    color: rgba(44, 62, 80, 0.5);
                 }}
             """
             
             self.username_input.setStyleSheet(input_style)
-            self.password_input.setStyleSheet(input_style.replace("margin-bottom: 20px", "margin-bottom: 25px"))
+            self.password_input.setStyleSheet(input_style.replace("margin-bottom: 18px", "margin-bottom: 30px"))
             
-            # 更新登录按钮字体
+            # 更新登录按钮字体（优化渐变按钮）
             self.login_btn.setStyleSheet(f"""
                 QPushButton {{
-                    background-color: #3498db;
+                    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                        stop:0 rgba(102, 126, 234, 1.0),
+                        stop:1 rgba(118, 75, 162, 1.0));
                     color: white;
                     border: none;
-                    border-radius: 10px;
+                    border-radius: 12px;
                     font-size: {login_font_size}px;
                     font-weight: bold;
+                    font-family: "Microsoft YaHei", sans-serif;
+                    letter-spacing: 3px;
+                    padding: 5px;
                 }}
                 QPushButton:hover {{
-                    background-color: #2980b9;
+                    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                        stop:0 rgba(122, 146, 254, 1.0),
+                        stop:1 rgba(138, 95, 182, 1.0));
                 }}
                 QPushButton:pressed {{
-                    background-color: #21618c;
+                    background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                        stop:0 rgba(82, 106, 214, 1.0),
+                        stop:1 rgba(98, 55, 142, 1.0));
                 }}
             """)
 
@@ -147,15 +178,20 @@ class LoginPage(BackgroundWidget):
         self.back_btn.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.back_btn.setStyleSheet("""
             QPushButton {
-                background-color: rgba(52, 152, 219, 0.8);
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                    stop:0 rgba(102, 126, 234, 0.8),
+                    stop:1 rgba(118, 75, 162, 0.8));
                 color: white;
                 border: none;
-                border-radius: 25px;
+                border-radius: 20px;
                 font-size: 16px;
                 font-weight: bold;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QPushButton:hover {
-                background-color: rgba(52, 152, 219, 1.0);
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                    stop:0 rgba(102, 126, 234, 1.0),
+                    stop:1 rgba(118, 75, 162, 1.0));
             }
         """)
         self.back_btn.clicked.connect(self.switch_to_main.emit)
@@ -175,25 +211,45 @@ class LoginPage(BackgroundWidget):
         self.form_frame.setMaximumSize(800, 640)
         # 设置尺寸策略，让表单能够扩展
         self.form_frame.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
+        # 增强的毛玻璃效果卡片 + 阴影
         self.form_frame.setStyleSheet("""
             QFrame {
-                background-color: rgba(255, 255, 255, 0.95);
-                border-radius: 25px;
+                background-color: rgba(255, 255, 255, 0.08);
+                border: 2px solid rgba(255, 255, 255, 0.18);
+                border-radius: 32px;
             }
         """)
         
         form_layout = QVBoxLayout(self.form_frame)
         form_layout.setContentsMargins(50, 50, 50, 50)
         
-        # 登录标题 - 保存引用
+        # 添加装饰性顶部渐变条
+        top_decoration = QLabel()
+        top_decoration.setFixedHeight(6)
+        top_decoration.setStyleSheet("""
+            QLabel {
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(102, 126, 234, 0.8),
+                    stop:0.5 rgba(118, 75, 162, 0.8),
+                    stop:1 rgba(102, 126, 234, 0.8));
+                border-radius: 3px;
+                margin-bottom: 10px;
+            }
+        """)
+        form_layout.addWidget(top_decoration)
+
+        # 登录标题 - 保存引用（增强的视觉效果）
         self.login_title = QLabel("用户登录")
         self.login_title.setAlignment(Qt.AlignCenter)
         self.login_title.setStyleSheet("""
             QLabel {
-                color: #2c3e50;
-                font-size: 32px;
+                color: #ffffff;
+                font-size: 38px;
                 font-weight: bold;
-                margin-bottom: 40px;
+                margin-top: 15px;
+                margin-bottom: 35px;
+                font-family: "Microsoft YaHei", sans-serif;
+                letter-spacing: 6px;
             }
         """)
         form_layout.addWidget(self.login_title)
@@ -208,14 +264,21 @@ class LoginPage(BackgroundWidget):
         self.username_input.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.username_input.setStyleSheet("""
             QLineEdit {
-                border: 2px solid #bdc3c7;
-                border-radius: 10px;
-                padding: 15px;
-                font-size: 20px;
-                margin-bottom: 20px;
+                background-color: rgba(255, 255, 255, 0.95);
+                border: 2px solid rgba(255, 255, 255, 0.25);
+                border-radius: 12px;
+                padding: 16px 20px;
+                font-size: 18px;
+                margin-bottom: 18px;
+                color: #1a1a2e;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QLineEdit:focus {
-                border-color: #3498db;
+                border: 2px solid rgba(102, 126, 234, 1.0);
+                background-color: rgba(255, 255, 255, 1.0);
+            }
+            QLineEdit::placeholder {
+                color: rgba(44, 62, 80, 0.5);
             }
         """)
         form_layout.addWidget(self.username_input)
@@ -231,14 +294,21 @@ class LoginPage(BackgroundWidget):
         self.password_input.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.password_input.setStyleSheet("""
             QLineEdit {
-                border: 2px solid #bdc3c7;
-                border-radius: 10px;
-                padding: 15px;
-                font-size: 20px;
-                margin-bottom: 25px;
+                background-color: rgba(255, 255, 255, 0.95);
+                border: 2px solid rgba(255, 255, 255, 0.25);
+                border-radius: 12px;
+                padding: 16px 20px;
+                font-size: 18px;
+                margin-bottom: 30px;
+                color: #1a1a2e;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QLineEdit:focus {
-                border-color: #3498db;
+                border: 2px solid rgba(102, 126, 234, 1.0);
+                background-color: rgba(255, 255, 255, 1.0);
+            }
+            QLineEdit::placeholder {
+                color: rgba(44, 62, 80, 0.5);
             }
         """)
         form_layout.addWidget(self.password_input)
@@ -252,18 +322,27 @@ class LoginPage(BackgroundWidget):
         self.login_btn.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         self.login_btn.setStyleSheet("""
             QPushButton {
-                background-color: #3498db;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(102, 126, 234, 1.0),
+                    stop:1 rgba(118, 75, 162, 1.0));
                 color: white;
                 border: none;
-                border-radius: 10px;
-                font-size: 20px;
+                border-radius: 12px;
+                font-size: 22px;
                 font-weight: bold;
+                font-family: "Microsoft YaHei", sans-serif;
+                letter-spacing: 3px;
+                padding: 5px;
             }
             QPushButton:hover {
-                background-color: #2980b9;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(122, 146, 254, 1.0),
+                    stop:1 rgba(138, 95, 182, 1.0));
             }
             QPushButton:pressed {
-                background-color: #21618c;
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(82, 106, 214, 1.0),
+                    stop:1 rgba(98, 55, 142, 1.0));
             }
         """)
         self.login_btn.clicked.connect(self.handle_login)

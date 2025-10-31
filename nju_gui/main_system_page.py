@@ -27,15 +27,16 @@ class LargeModuleCard(QFrame):
         self.setMaximumSize(600, 1200)  # 增大最大高度给更多空间
         self.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
         
+        # 毛玻璃效果卡片
         self.setStyleSheet("""
             QFrame {
-                background-color: rgba(255, 255, 255, 0.95);
-                border-radius: 20px;
-                border: 3px solid #e0e0e0;
+                background-color: rgba(255, 255, 255, 0.15);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                border-radius: 24px;
             }
             QFrame:hover {
-                border-color: #3498db;
-                background-color: rgba(255, 255, 255, 1.0);
+                background-color: rgba(255, 255, 255, 0.25);
+                border: 1px solid rgba(102, 126, 234, 0.6);
             }
         """)
         
@@ -67,10 +68,12 @@ class LargeModuleCard(QFrame):
             self.icon_label.setStyleSheet("""
                 QLabel {
                     font-size: 80px;
-                    color: #3498db;
-                    background-color: #f8f9fa;
+                    color: rgba(102, 126, 234, 1.0);
+                    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                        stop:0 rgba(255, 255, 255, 0.2),
+                        stop:1 rgba(255, 255, 255, 0.1));
                     border-radius: 75px;
-                    border: 3px solid #e9ecef;
+                    border: 1px solid rgba(255, 255, 255, 0.3);
                 }
             """)
         
@@ -86,11 +89,13 @@ class LargeModuleCard(QFrame):
             QLabel {
                 font-size: 36px;
                 font-weight: bold;
-                color: #2c3e50;
+                color: #ffffff;
                 margin: 15px 0;
                 padding: 10px;
                 background-color: transparent;
                 border: none;
+                font-family: "Microsoft YaHei", sans-serif;
+                letter-spacing: 1px;
             }
         """)
         self.title_label.setCursor(Qt.PointingHandCursor)
@@ -114,12 +119,13 @@ class LargeModuleCard(QFrame):
             feature_label.setSizePolicy(QSizePolicy.Expanding, QSizePolicy.Expanding)
             feature_label.setStyleSheet("""
                 QLabel {
-                    font-size: 26px;
-                    color: #34495e;
+                    font-size: 24px;
+                    color: rgba(255, 255, 255, 0.9);
                     margin: 8px 0;
                     padding: 8px;
                     background-color: transparent;
                     border: none;
+                    font-family: "Microsoft YaHei", sans-serif;
                 }
             """)
             # 确保功能描述不可点击
@@ -165,10 +171,12 @@ class LargeModuleCard(QFrame):
             self.icon_label.setStyleSheet(f"""
                 QLabel {{
                     font-size: {emoji_font_size}px;
-                    color: #3498db;
-                    background-color: #f8f9fa;
+                    color: rgba(102, 126, 234, 1.0);
+                    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                        stop:0 rgba(255, 255, 255, 0.2),
+                        stop:1 rgba(255, 255, 255, 0.1));
                     border-radius: {icon_size//2}px;
-                    border: 3px solid #e9ecef;
+                    border: 1px solid rgba(255, 255, 255, 0.3);
                 }}
             """)
         
@@ -186,11 +194,13 @@ class LargeModuleCard(QFrame):
                 QLabel {{
                     font-size: {title_font_size}px;
                     font-weight: bold;
-                    color: #2c3e50;
+                    color: #ffffff;
                     margin: 8px 0;
                     padding: 5px;
                     background-color: transparent;
                     border: none;
+                    font-family: "Microsoft YaHei", sans-serif;
+                    letter-spacing: 1px;
                 }}
             """)
         
@@ -199,12 +209,13 @@ class LargeModuleCard(QFrame):
             feature_label.setStyleSheet(f"""
                 QLabel {{
                     font-size: {feature_font_size}px;
-                    color: #34495e;
+                    color: rgba(255, 255, 255, 0.9);
                     margin: 6px 0;
                     padding: 6px;
                     background-color: transparent;
                     border: none;
                     line-height: 1.4;
+                    font-family: "Microsoft YaHei", sans-serif;
                 }}
             """)
     
@@ -223,11 +234,8 @@ class MainSystemPage(BackgroundWidget):
     module_selected = pyqtSignal(str)
     
     def __init__(self):
-        # 使用背景图片，如果不存在则使用空字符串
-        background_path = "D:\\nju_gui\\VCG211410114301.jpg"
-        if not os.path.exists(background_path):
-            background_path = ""
-        super().__init__(background_path)
+        # 使用渐变背景替代图片
+        super().__init__(use_gradient=True)
         
         # 保存组件引用用于响应式
         self.title_label = None
@@ -249,6 +257,8 @@ class MainSystemPage(BackgroundWidget):
                     font-size: {title_font_size}px;
                     font-weight: bold;
                     margin: 30px 0;
+                    font-family: "Microsoft YaHei", sans-serif;
+                    letter-spacing: 4px;
                 }}
             """)
     
@@ -269,6 +279,8 @@ class MainSystemPage(BackgroundWidget):
                 font-size: 60px;
                 font-weight: bold;
                 margin: 30px 0;
+                font-family: "Microsoft YaHei", sans-serif;
+                letter-spacing: 4px;
             }
         """)
         
@@ -277,18 +289,25 @@ class MainSystemPage(BackgroundWidget):
         logout_btn.setFixedSize(140, 50)
         logout_btn.setStyleSheet("""
             QPushButton {
-                background-color: rgba(231, 76, 60, 0.8);
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(235, 87, 87, 0.8),
+                    stop:1 rgba(192, 57, 43, 0.8));
                 color: white;
-                border: none;
+                border: 1px solid rgba(255, 255, 255, 0.3);
                 border-radius: 25px;
                 font-size: 16px;
                 font-weight: bold;
+                font-family: "Microsoft YaHei", sans-serif;
             }
             QPushButton:hover {
-                background-color: rgba(231, 76, 60, 1.0);
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(255, 107, 107, 1.0),
+                    stop:1 rgba(212, 77, 63, 1.0));
             }
             QPushButton:pressed {
-                background-color: rgba(192, 57, 43, 1.0);
+                background: qlineargradient(x1:0, y1:0, x2:1, y2:0,
+                    stop:0 rgba(215, 67, 67, 1.0),
+                    stop:1 rgba(172, 37, 23, 1.0));
             }
         """)
         logout_btn.clicked.connect(self.logout_signal.emit)
