@@ -586,14 +586,14 @@ class ExposureAnalysisPage(BackgroundWidget):
     
     def download_template_1_1(self):
         """下载模块1-1数据模板"""
-        template_source = os.path.join(self.templates_path, "校正重测数据模板.xlsx")
+        template_source = os.path.join(self.templates_path, "校正实测数据模板.xlsx")
         
         if not os.path.exists(template_source):
             QMessageBox.warning(self, "提示", f"模板文件不存在，请检查目录：\n{template_source}")
             return
         
         save_path, _ = QFileDialog.getSaveFileName(
-            self, "保存校正数据模板", "校正重测数据模板.xlsx", "Excel文件 (*.xlsx)"
+            self, "保存校正数据模板", "校正实测数据模板.xlsx", "Excel文件 (*.xlsx)"
         )
         
         if save_path:
@@ -607,14 +607,14 @@ class ExposureAnalysisPage(BackgroundWidget):
     
     def download_template_1_2(self):
         """下载模块1-2数据模板"""
-        template_source = os.path.join(self.templates_path, "样品实测模板.xlsx")
+        template_source = os.path.join(self.templates_path, "样品实测数据模板.xlsx")
         
         if not os.path.exists(template_source):
             QMessageBox.warning(self, "提示", f"模板文件不存在，请检查目录：\n{template_source}")
             return
         
         save_path, _ = QFileDialog.getSaveFileName(
-            self, "保存样品数据模板", "样品实测模板.xlsx", "Excel文件 (*.xlsx)"
+            self, "保存样品数据模板", "样品实测数据模板.xlsx", "Excel文件 (*.xlsx)"
         )
         
         if save_path:
