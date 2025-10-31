@@ -5,6 +5,7 @@ from main_page import MainPage
 from login_page import LoginPage
 from main_system_page import MainSystemPage
 from exposure_analysis_page import ExposureAnalysisPage
+from risk_assessment_page import RiskAssessmentPage
 
 class MainWindow(QMainWindow):
     """主窗口"""
@@ -26,16 +27,22 @@ class MainWindow(QMainWindow):
         self.login_page = LoginPage()
         self.system_page = MainSystemPage()  # 新增主功能页面
         self.exposure_page = ExposureAnalysisPage()  # 新增暴露分析页面
+        self.risk_assessment_page = RiskAssessmentPage()  # 新增风险表征页面
         
         # 添加页面到堆栈
         self.stacked_widget.addWidget(self.main_page)    # 索引 0：启动页面
         self.stacked_widget.addWidget(self.login_page)   # 索引 1：登录页面
         self.stacked_widget.addWidget(self.system_page)  # 索引 2：主功能页面
         self.stacked_widget.addWidget(self.exposure_page)  # 索引 3：暴露分析页面
+        self.stacked_widget.addWidget(self.risk_assessment_page)  # 索引 4：风险表征页面
 
-        # 连接信号
-        self.exposure_page.back_to_main.connect(self.show_main_page)
-        self.exposure_page.switch_to_risk_assessment.connect(self.show_main_page)
+        # 连接暴露分析页面信号
+        self.exposure_page.back_to_main.connect(self.show_system_page)
+        self.exposure_page.switch_to_risk_assessment.connect(self.show_risk_assessment_page)
+        
+        # 连接风险表征页面信号
+        self.risk_assessment_page.back_to_main.connect(self.show_system_page)
+        self.risk_assessment_page.switch_to_risk_tracing.connect(self.show_risk_tracing_placeholder)
 
         
         # 连接信号
@@ -90,20 +97,32 @@ class MainWindow(QMainWindow):
         """处理模块选择"""
         print(f"用户选择了模块: {module_name}")
         
-        # 这里可以根据不同的模块跳转到不同的子页面
-        # 例如：
+        # 根据不同的模块跳转到不同的子页面
         if module_name == "暴露分析":
-            self.stacked_widget.setCurrentWidget(self.exposure_page)
-            # TODO: 实现暴露分析功能页面
-            # self.show_exposure_analysis_page()
+            self.show_exposure_page()
         elif module_name == "风险表征":
-            print("准备打开风险表征模块...")
-            # TODO: 实现风险表征功能页面
-            # self.show_risk_assessment_page()
+            self.show_risk_assessment_page()
         elif module_name == "风险溯源":
-            print("准备打开风险溯源模块...")
-            # TODO: 实现风险溯源功能页面
-            # self.show_risk_tracing_page()
+            self.show_risk_tracing_placeholder()
+    
+    def show_exposure_page(self):
+        """显示暴露分析页面"""
+        self.stacked_widget.setCurrentWidget(self.exposure_page)
+    
+    def show_risk_assessment_page(self):
+        """显示风险表征页面"""
+        self.stacked_widget.setCurrentWidget(self.risk_assessment_page)
+    
+    def show_risk_tracing_placeholder(self):
+        """显示风险溯源占位符（暂未实现）"""
+        from PyQt5.QtWidgets import QMessageBox
+        QMessageBox.information(
+            self, 
+            "功能开发中", 
+            "风险溯源模块正在开发中...\n敬请期待！"
+        )
+        # 暂时返回主功能页面
+        self.show_system_page()
 
 def main():
     app = QApplication(sys.argv)
