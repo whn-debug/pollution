@@ -6,6 +6,7 @@ from login_page import LoginPage
 from main_system_page import MainSystemPage
 from exposure_analysis_page import ExposureAnalysisPage
 from risk_assessment_page import RiskAssessmentPage
+from risk_tracing_page import RiskTracingPage
 
 class MainWindow(QMainWindow):
     """主窗口"""
@@ -28,6 +29,7 @@ class MainWindow(QMainWindow):
         self.system_page = MainSystemPage()  # 新增主功能页面
         self.exposure_page = ExposureAnalysisPage()  # 新增暴露分析页面
         self.risk_assessment_page = RiskAssessmentPage()  # 新增风险表征页面
+        self.risk_tracing_page = RiskTracingPage()  # 新增风险溯源页面
         
         # 添加页面到堆栈
         self.stacked_widget.addWidget(self.main_page)    # 索引 0：启动页面
@@ -35,6 +37,7 @@ class MainWindow(QMainWindow):
         self.stacked_widget.addWidget(self.system_page)  # 索引 2：主功能页面
         self.stacked_widget.addWidget(self.exposure_page)  # 索引 3：暴露分析页面
         self.stacked_widget.addWidget(self.risk_assessment_page)  # 索引 4：风险表征页面
+        self.stacked_widget.addWidget(self.risk_tracing_page)  # 索引 5：风险溯源页面
 
         # 连接暴露分析页面信号
         self.exposure_page.back_to_main.connect(self.show_system_page)
@@ -42,7 +45,11 @@ class MainWindow(QMainWindow):
         
         # 连接风险表征页面信号
         self.risk_assessment_page.back_to_main.connect(self.show_system_page)
-        self.risk_assessment_page.switch_to_risk_tracing.connect(self.show_risk_tracing_placeholder)
+        self.risk_assessment_page.switch_to_risk_tracing.connect(self.show_risk_tracing_page)
+        
+        # 连接风险溯源页面信号
+        self.risk_tracing_page.back_to_main.connect(self.show_system_page)
+        self.risk_tracing_page.back_to_risk_assessment.connect(self.show_risk_assessment_page)
 
         
         # 连接信号
@@ -103,7 +110,7 @@ class MainWindow(QMainWindow):
         elif module_name == "风险表征":
             self.show_risk_assessment_page()
         elif module_name == "风险溯源":
-            self.show_risk_tracing_placeholder()
+            self.show_risk_tracing_page()
     
     def show_exposure_page(self):
         """显示暴露分析页面"""
@@ -113,16 +120,9 @@ class MainWindow(QMainWindow):
         """显示风险表征页面"""
         self.stacked_widget.setCurrentWidget(self.risk_assessment_page)
     
-    def show_risk_tracing_placeholder(self):
-        """显示风险溯源占位符（暂未实现）"""
-        from PyQt5.QtWidgets import QMessageBox
-        QMessageBox.information(
-            self, 
-            "功能开发中", 
-            "风险溯源模块正在开发中...\n敬请期待！"
-        )
-        # 暂时返回主功能页面
-        self.show_system_page()
+    def show_risk_tracing_page(self):
+        """显示风险溯源页面"""
+        self.stacked_widget.setCurrentWidget(self.risk_tracing_page)
 
 def main():
     app = QApplication(sys.argv)
